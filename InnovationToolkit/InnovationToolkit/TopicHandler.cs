@@ -10,12 +10,16 @@ namespace _365MethodeClassic
     {
         private List<Topic> listOfTopic { get; set;}
 
+        public TopicHandler()
+        {
+            listOfTopic = new List<Topic>();
+        }
         public void AddTopicToList(Topic topicToAdd)
         {
             this.listOfTopic.Add(topicToAdd);                        
         }
 
-        public List<Topic> GetlistOfTopics()
+        public List<Topic> GetListOfTopics()
         {
             return listOfTopic;
         }

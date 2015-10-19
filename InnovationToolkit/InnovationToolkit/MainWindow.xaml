@@ -10,6 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox
             x:Name="TopicSummary"
@@ -35,8 +36,29 @@
             Width="65"
             Margin="10,10,0,0"
             VerticalAlignment="Top"
-            HorizontalAlignment="Left" Click="SaveTopic"/>
-            
+            HorizontalAlignment="Left" 
+            Click="SaveTopic"/>
+
+        <Button 
+            x:Name="ShowSavedTopicButton"
+            Grid.Row="1"
+            Content="Show Saved Topic"
+            Height="30"
+            Width="120"
+            Margin="10,10,10,0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right" 
+            Click="SowSavedTopic"/>
+        
+        <TextBlock
+            x:Name="MySavedTopicsTextBlock"
+            Grid.Row="2"
+            Text="nothing"
+            TextWrapping="Wrap"
+            Height="50"
+            Width="500"
+            />
+
 
     </Grid>
     <!--<Grid Background="LightGray" Margin="0,0,0,-30">

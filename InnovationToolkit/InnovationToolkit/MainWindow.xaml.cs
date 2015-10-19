@@ -31,9 +31,17 @@ namespace _365MethodeClassic
 
         private void SaveTopic(object sender, RoutedEventArgs e)
         {
-            Topic myNewTopic = new Topic(1, TopicSummary.Text.ToString, TopicDescription.Text.ToString);
+            Topic myNewTopic = new Topic(1, TopicSummary.Text, TopicDescription.Text);
             myTopicList.AddTopicToList(myNewTopic);
 
+        }
+
+        private void SowSavedTopic(object sender, RoutedEventArgs e)
+        {
+            foreach (Topic topic in myTopicList.GetListOfTopics())
+            {
+                MySavedTopicsTextBlock.Text = MySavedTopicsTextBlock.Text + " - " + topic.GetTopicSummary();
+            }
         }
 
         //private void button_Click(object sender, RoutedEventArgs e)
