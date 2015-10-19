@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_365MethodeClassic"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="525">
-    <Grid Background="LightGray" Margin="0,0,0,-30">
+        Title="MainWindow" Height="500" Width="550">
+    <Grid Background="LightGray" Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox
+            x:Name="TopicSummary"
+            Height="30"
+            Width="500"
+            Margin="10,20,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"/>
+
+        <TextBox
+            x:Name="TopicDescription"
+            Height="200"
+            Width="500"
+            Margin="10,55,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"/>
+        
+        <Button 
+            x:Name="SaveTopicButton"
+            Grid.Row="1"
+            Content="Save Topic"
+            Height="30"
+            Width="65"
+            Margin="10,10,0,0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left" Click="SaveTopic"/>
+            
+
+    </Grid>
+    <!--<Grid Background="LightGray" Margin="0,0,0,-30">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="359*"/>
             <ColumnDefinition Width="158*"/>
@@ -91,10 +124,6 @@
             VerticalAlignment="Top" 
             Height="100" 
             Width="200"/>
-        <!--<Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <Grid HorizontalAlignment="Left" Height="90" Margin="28,105,0,0" VerticalAlignment="Top" Width="458">
 
-        </Grid>
-        -->
-    </Grid>
+    </Grid>-->
 </Window>

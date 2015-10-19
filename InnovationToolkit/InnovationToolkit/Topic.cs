@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace _365MethodeClassic
 {
-    class Topics
+    class Topic
     {
         private int topicId { set; get; }
         private string topicSummary { set; get; }
         private string topicDescription { set; get; }
 
-        Topics(int _topicId, string _topicSummary, string _topicDescription)
+        Topic(int _topicId, string _topicSummary, string _topicDescription)
         {
             this.topicId = _topicId;
             this.topicSummary = _topicSummary;
             this.topicDescription = _topicDescription;
-
         }
     }
 }

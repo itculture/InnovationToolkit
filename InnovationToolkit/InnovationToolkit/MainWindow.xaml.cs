@@ -20,16 +20,27 @@ namespace _365MethodeClassic
     /// </summary>
     public partial class MainWindow : Window
     {
+        private TopicHandler myTopicList = new TopicHandler();
+
         public MainWindow()
         {
             InitializeComponent();
+                     
+
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void SaveTopic(object sender, RoutedEventArgs e)
         {
-            string saveCurrentIdeaHere = CurrentIdea.Text;
-            ThisIsSaved.Text = saveCurrentIdeaHere;
+            Topic myNewTopic = new Topic(1, TopicSummary.Text.ToString, TopicDescription.Text.ToString);
+            myTopicList.AddTopicToList(myNewTopic);
+
         }
+
+        //private void button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    string saveCurrentIdeaHere = CurrentIdea.Text;
+        //    ThisIsSaved.Text = saveCurrentIdeaHere;
+        //}
 
     }
 }
