@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InnovationToolkit
+namespace _365MethodeClassic
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,5 +24,12 @@ namespace InnovationToolkit
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            string saveCurrentIdeaHere = CurrentIdea.Text;
+            ThisIsSaved.Text = saveCurrentIdeaHere;
+        }
+
     }
 }

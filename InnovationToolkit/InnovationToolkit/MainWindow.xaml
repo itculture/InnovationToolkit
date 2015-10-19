@@ -8,7 +8,8 @@
         Title="MainWindow" Height="500" Width="525">
     <Grid Background="LightGray" Margin="0,0,0,-30">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="359*"/>
+            <ColumnDefinition Width="158*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -38,7 +39,7 @@
             Text="A very short description of the Problem that should be solved. Not much more than 2 or 3 Sentences " 
             VerticalAlignment="Top" 
             Height="32" 
-            Width="476"/>
+            Width="476" Grid.ColumnSpan="2"/>
 
         <TextBox 
             x:Name="CurrentIdea" 
@@ -49,18 +50,17 @@
             TextWrapping="Wrap" 
             Text="" 
             VerticalAlignment="Top" 
-            Width="497"/>
+            Width="497" Grid.ColumnSpan="2"/>
 
         <Button 
             x:Name="SaveCurrentIdea" 
             Grid.Row="2"
             Content="Save" 
             HorizontalAlignment="Left" 
-            Margin="420,100,0,0" 
+            Margin="60.667,100,0,0" 
             VerticalAlignment="Top" 
             Width="75" 
-            Height="22"
-            Click="button_Click" />
+            Height="22" Grid.Column="1" Click="button_Click" />
 
         <ComboBox 
             x:Name="ReferenceTo" 
@@ -79,7 +79,7 @@
             Margin="30,100,0,0" 
             VerticalAlignment="Top" 
             Height="26" 
-            Width="65"/>
+            Width="65" Grid.RowSpan="2"/>
 
         <TextBlock 
             x:Name="ThisIsSaved" 
