@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _365MethodeClassic
+namespace InnovationToolKit
 {
     class Topic
     {
@@ -22,6 +22,11 @@ namespace _365MethodeClassic
         public String GetTopicSummary()
         {
             return topicSummary;
+        }
+
+        public String GetTopicDescription()
+        {
+            return topicDescription;
         }
     }
 }

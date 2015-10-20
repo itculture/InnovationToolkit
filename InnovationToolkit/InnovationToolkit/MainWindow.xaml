@@ -1,67 +1,13 @@
-﻿<Window x:Class="_365MethodeClassic.MainWindow"
+﻿<Window x:Class="InnovationToolKit.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_365MethodeClassic"
+        xmlns:local="clr-namespace:InnovationToolKit"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="550">
-    <Grid Background="LightGray" Margin="0,0,0,0">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBox
-            x:Name="TopicSummary"
-            Height="30"
-            Width="500"
-            Margin="10,20,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"/>
-
-        <TextBox
-            x:Name="TopicDescription"
-            Height="200"
-            Width="500"
-            Margin="10,55,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"/>
-        
-        <Button 
-            x:Name="SaveTopicButton"
-            Grid.Row="1"
-            Content="Save Topic"
-            Height="30"
-            Width="65"
-            Margin="10,10,0,0"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Left" 
-            Click="SaveTopic"/>
-
-        <Button 
-            x:Name="ShowSavedTopicButton"
-            Grid.Row="1"
-            Content="Show Saved Topic"
-            Height="30"
-            Width="120"
-            Margin="10,10,10,0"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Right" 
-            Click="SowSavedTopic"/>
-        
-        <TextBlock
-            x:Name="MySavedTopicsTextBlock"
-            Grid.Row="2"
-            Text="nothing"
-            TextWrapping="Wrap"
-            Height="50"
-            Width="500"
-            />
-
-
-    </Grid>
-    <!--<Grid Background="LightGray" Margin="0,0,0,-30">
+  
+    <Grid Background="LightGray" Margin="0,0,0,-30">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="359*"/>
             <ColumnDefinition Width="158*"/>
@@ -115,7 +61,8 @@
             Margin="60.667,100,0,0" 
             VerticalAlignment="Top" 
             Width="75" 
-            Height="22" Grid.Column="1" Click="button_Click" />
+            Height="22" Grid.Column="1" 
+            Click="ClickSaveIdeaButton" />
 
         <ComboBox 
             x:Name="ReferenceTo" 
@@ -147,5 +94,5 @@
             Height="100" 
             Width="200"/>
 
-    </Grid>-->
+    </Grid>
 </Window>
