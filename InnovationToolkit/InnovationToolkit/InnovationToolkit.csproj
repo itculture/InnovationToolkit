@@ -58,8 +58,8 @@
     <Compile Include="GenerateIdeasToTopicsPage.xaml.cs">
       <DependentUpon>GenerateIdeasToTopicsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CaptureIdeasToTopicPage.xaml.cs">
-      <DependentUpon>CaptureIdeasToTopicPage.xaml</DependentUpon>
+    <Compile Include="TopicPages\CreateTopicsWindow.xaml.cs">
+      <DependentUpon>CreateTopicsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Topic.cs" />
     <Page Include="GenerateIdeasToTopicsPage.xaml">
@@ -79,7 +79,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="CaptureIdeasToTopicPage.xaml">
+    <Page Include="TopicPages\CreateTopicsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -18,10 +18,10 @@ namespace InnovationToolKit
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class TopicsPage : Page
+    public partial class CreateTopicsWindow : Window
     {
         private TopicHandler myTopicList = new TopicHandler();
-        public TopicsPage()
+        public CreateTopicsWindow()
         {
             InitializeComponent();
         }

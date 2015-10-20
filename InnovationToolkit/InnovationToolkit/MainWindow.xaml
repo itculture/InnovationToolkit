@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InnovationToolKit"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="550">
-  
+
     <Grid Background="LightGray" Margin="0,0,0,-30">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="359*"/>
@@ -19,11 +19,23 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
+        <Button
+            x:Name="GoToCreateTopicPage"
+            Grid.Row="0"
+            Content="Themenübersicht"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="10,10,0,0"
+            Height="25"
+            Width="100"
+            Click="ClickButtonGoToCreateTopicWindow"
+            />
+        
         <TextBlock 
             x:Name="TopicHeadLine" 
             Grid.Column="0" 
             HorizontalAlignment="Left" 
-            Margin="10,10,0,0" 
+            Margin="10,43,0,0" 
             TextWrapping="Wrap" 
             Text="Problem to be solved" 
             VerticalAlignment="Top" 
@@ -35,7 +47,7 @@
             x:Name="TopicDescription" 
             Grid.Column="0" 
             HorizontalAlignment="Left" 
-            Margin="10,50,0,0" 
+            Margin="10,83,0,0" 
             TextWrapping="Wrap" 
             Text="A very short description of the Problem that should be solved. Not much more than 2 or 3 Sentences " 
             VerticalAlignment="Top" 

@@ -34,5 +34,11 @@ namespace InnovationToolKit
             ThisIsSaved.Text = saveCurrentIdeaHere;
         }
 
+        private void ClickButtonGoToCreateTopicWindow(object sender, RoutedEventArgs e)
+        {
+            CreateTopicsWindow TopicWindow = new CreateTopicsWindow();
+            TopicWindow.ShowDialog();
+            //this.Close();
+        }
     }
 }
